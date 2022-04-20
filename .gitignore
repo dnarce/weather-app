@@ -28,7 +28,7 @@ Latest commit 1d3adfc 12 minutes ago
 104 lines (76 sloc)  1.57 KB
 
 .DS_Store
-.vscode
+.vscode/
    
 # Logs
 logs
