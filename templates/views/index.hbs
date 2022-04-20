@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fantasy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fc2b290c65.js" crossorigin="anonymous"></script>
+
+    <title>Wheather App</title>
+</head>
+
+<body>
+    <div class="hero min-h-screen" style="background-image: url(/images/background.jpeg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-extrabold text-white">
+                    Wheather-app</h1>
+
+                <div id="mainContent">
+                    <form id="weather-form" action="">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                                <span class="label-text text-neutral-content">Type your city location</span>
+                            </label>
+                            <input id="address" type="text" placeholder="example: Mendoza"
+                                class="input input-bordered input-md w-full max-w-xs">
+                        </div>
+                        <button class="btn btn-primary mt-2">Get weather</button>
+                </div>
+
+                <div id="loading" class="hidden">
+                    <div>Loading...</div>
+                    <progress class="progress w-56"></progress>
+                </div>
+
+                <div id="results" class="hidden">
+                    <div id="resultData"></div>
+                    <button id="restartButton" class="btn btn-secondary mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                                clip-rule="evenodd" />
+                        </svg>Restart</button>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
